@@ -1,0 +1,5 @@
+#!/bin/sh
+
+python3 ./signserver/manage.py makemigrations api
+python3 ./signserver/manage.py migrate
+python3 ./signserver/manage.py runserver 0.0.0.0:8003
